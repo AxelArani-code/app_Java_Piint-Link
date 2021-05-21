@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app_secon_work">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_pinterest"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_pinterest"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppSeconWork">
+        <activity android:name=".ui.View.ViewBeatle"></activity>
+        <activity android:name=".ui.View.ViewGrunge" />
+        <activity android:name=".ui.View.ViewDising" />
+        <activity android:name=".ui.View.View_Dubujo" />
+        <activity android:name=".ui.View.ViewMotos" />
+        <activity android:name=".ui.View.ViewEstilo" />
+        <activity android:name=".ui.View.ViewEscritorio" />
+        <activity android:name=".ui.PlahsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.View.ViewActivity" />
+        <activity android:name=".ui.DetailActivity" />
+        <activity android:name=".ui.MainActivity" />
+    </application>
+
+</manifest>

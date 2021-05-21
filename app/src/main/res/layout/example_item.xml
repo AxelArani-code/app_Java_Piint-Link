@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="50dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="8dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/cargando"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/image_view_user"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                app:riv_border_color="#fff"
+                app:riv_border_width="2dip"
+                app:riv_corner_radius="30dip"
+                app:riv_mutate_background="true"
+                app:riv_tile_mode="repeat"/>
+
+            <TextView
+                android:id="@+id/text_view_creator"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Angeles Blones"
+                android:textAlignment="center"
+                android:textColor="#9E000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <TextView
+
+            android:id="@+id/text_view_likes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Description"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

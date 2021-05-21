@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragment.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/svDogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border_2"
+                app:layout_constraintCircleRadius="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent" >
+
+
+            </androidx.appcompat.widget.SearchView>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Ideas para ti "
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="17dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <GridLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_wallpaper"
+                            android:layout_width="197dp"
+                            android:layout_height="106dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagen_1"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_wallpaper"
+                            android:layout_alignTop="@+id/bt_wallpaper"
+                            android:layout_alignEnd="@+id/bt_wallpaper"
+                            android:layout_alignBottom="@+id/bt_wallpaper"
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Wallpaper"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_Escritorio"
+                            android:layout_width="185dp"
+                            android:layout_height="105dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imgen_2"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_Escritorio"
+                            android:layout_alignTop="@+id/bt_Escritorio"
+                            android:layout_alignEnd="@+id/bt_Escritorio"
+                            android:layout_alignBottom="@+id/bt_Escritorio"
+
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Escritorio"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_Estilo"
+
+                            android:layout_width="185dp"
+                            android:layout_height="105dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagen_3"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_Estilo"
+                            android:layout_alignTop="@+id/bt_Estilo"
+                            android:layout_alignEnd="@+id/bt_Estilo"
+                            android:layout_alignBottom="@+id/bt_Estilo"
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Estilo"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_Motos"
+
+                            android:layout_width="185dp"
+                            android:layout_height="105dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagen_4"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_Motos"
+                            android:layout_alignTop="@+id/bt_Motos"
+                            android:layout_alignEnd="@+id/bt_Motos"
+                            android:layout_alignBottom="@+id/bt_Motos"
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Motos"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </GridLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Populares"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <GridLayout
+                    android:id="@+id/items_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_Dibujos"
+
+                            android:layout_width="197dp"
+                            android:layout_height="106dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagen_6"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_Dibujos"
+                            android:layout_alignTop="@+id/bt_Dibujos"
+                            android:layout_alignEnd="@+id/bt_Dibujos"
+                            android:layout_alignBottom="@+id/bt_Dibujos"
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="49dp"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Dibujos sicologicos"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_Diseños"
+                            android:layout_width="185dp"
+                            android:layout_height="105dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagen_7"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_Diseños"
+                            android:layout_alignTop="@+id/bt_Diseños"
+                            android:layout_alignEnd="@+id/bt_Diseños"
+                            android:layout_alignBottom="@+id/bt_Diseños"
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Diseños web "
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_Fotografias"
+                            android:layout_width="185dp"
+                            android:layout_height="105dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagen_8"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_Fotografias"
+                            android:layout_alignTop="@+id/bt_Fotografias"
+                            android:layout_alignEnd="@+id/bt_Fotografias"
+                            android:layout_alignBottom="@+id/bt_Fotografias"
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="49dp"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Fotografía grunge"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="209dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/bt_The_Beatles"
+                            android:layout_width="185dp"
+                            android:layout_height="105dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagen_9"
+                            app:riv_corner_radius="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="105dp"
+                            android:layout_alignStart="@+id/bt_The_Beatles"
+                            android:layout_alignTop="@+id/bt_The_Beatles"
+                            android:layout_alignEnd="@+id/bt_The_Beatles"
+                            android:layout_alignBottom="@+id/bt_The_Beatles"
+                            android:background="@drawable/backroud_button"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/bt_wallpaper"
+                                android:layout_alignTop="@+id/bt_wallpaper"
+                                android:layout_alignEnd="@+id/bt_wallpaper"
+                                android:layout_alignBottom="@+id/bt_wallpaper"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="The Beatles"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </GridLayout>
+
+
+
+            </RelativeLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Ver más"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:layout_marginTop="25dp"
+                android:textSize="17dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_View_See_More"
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+                <Button
+                    android:id="@+id/Button_Back_View"
+                    android:layout_width="58dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="323dp"
+                    android:layout_marginTop="74dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/back"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
